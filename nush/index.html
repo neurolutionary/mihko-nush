@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f3eb">
+<title>НУШ у Mihko — від першої картки до 4 класу</title>
+<meta name="description" content="План розвитку Mihko для 1–4 класів, офіційні джерела НУШ і 24 авторські картки пілоту 1 класу.">
+<link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти до вмісту</a>
+<header class="topbar"><a class="brand" href="./"><span class="brand-mark">m</span>mihko <span class="brand-section">/ НУШ</span></a><nav aria-label="Розділи"><a href="#courses">Курси</a><a href="#pilot">Картки</a><a href="#integration">Інтеграція</a><a href="#sources">Джерела</a></nav></header>
+<main id="main">
+<section class="hero">
+<div><p class="eyebrow">Навчальна бібліотека · версія 0.1</p><h1>Від першої картки<br>до <span>четвертого класу.</span></h1><p class="lead">Розширюємо світ Нейро навчальними курсами НУШ. Починаємо з невеликого пілоту, який можна переглянути, перевірити й поступово підключити до гри.</p><div class="hero-actions"><a class="button primary" href="#pilot">Спробувати 24 картки <span aria-hidden="true">↗</span></a><a class="button secondary" href="#integration">Як підключити до Mihko</a></div></div>
+<div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="tile tile-math">1 + 2</div><div class="tile tile-ua">Аа</div><div class="tile tile-en">Hello!</div><div class="tile tile-world">насінина<br><span>↗ паросток</span></div><div class="center-token">m<span>Нейро вчиться</span></div></div>
+</section>
+<div class="facts"><div><strong>4</strong><span>класи в плані</span></div><div><strong>24</strong><span>картки 1 класу</span></div><div><strong>4</strong><span>навчальні напрями</span></div><div><strong>0.1</strong><span>версія пілоту</span></div></div>
+<p class="status-note"><span class="status-dot"></span><strong>Пілот для перевірки.</strong> Картки ще не пройшли методичне затвердження й не підключені до Android-гри. Для англійської в цій текстовій демонстрації потрібне читання дорослого.</p>
+
+<section id="courses" class="section">
+<div class="section-heading"><div><p class="eyebrow">01 / навчальний маршрут</p><h2>Одна гра. Кілька курсів.</h2></div><p>Кожен рівень має свої навчальні цілі та власний прогрес.</p></div>
+<div id="course-tabs" class="course-tabs" role="tablist" aria-label="Оберіть курс"></div>
+<div id="course-panel" class="course-panel" role="tabpanel" tabindex="0"></div>
+<p class="muted">Це початкова карта чотирьох напрямів. Мистецтво, технології, фізична культура, інформатика та практичні роботи потребують окремого планування; повне покриття програми тут не заявлено.</p>
+</section>
+
+<section id="pilot" class="section">
+<div class="section-heading"><div><p class="eyebrow">02 / пілот першого класу</p><h2>Маленькі кроки.<br>Зрозумілі завдання.</h2></div><div><p>Відкрий картку, прочитай пояснення та спробуй відповісти. Усі вправи створено для цього пілоту.</p><a class="download" href="pilot.json" download="mihko-grade1-pilot.json">Завантажити 24 картки · JSON ↓</a></div></div>
+<div class="filters"><div id="subject-filters" class="subject-filters" role="group" aria-label="Навчальний напрям"></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Знайти тему або картку…" aria-label="Пошук карток"></label></div>
+<div class="result-line"><p id="result-count" role="status" aria-live="polite"></p><button id="reset-filters" class="text-button" type="button" hidden>Скинути фільтри</button></div>
+<div id="cards" class="cards"></div><p id="empty" class="empty" hidden>Карток за цим запитом немає. Спробуй інший запит.</p>
+<p class="muted">Ці 24 вправи показують формат. Вони не є повним курсом 1 класу й не утворюють автоматично послідовний маршрут: частина завдань потребує попереднього вивчення букв або слів.</p>
+</section>
+
+<section id="integration" class="section integration">
+<div class="section-heading"><div><p class="eyebrow">03 / шлях у програму</p><h2>Один раз налаштувати.<br>Далі додавати зміст.</h2></div><p>Поточна гра прив’язана до одного курсу. Щоб додавати класи без повторного переписування логіки, спочатку потрібна підтримка кількох курсів.</p></div>
+<div class="steps">
+<article><span class="step-number">01</span><h3>Реєстр курсів</h3><p>Передавати вибраний курс із меню. Для кожного мати окремий маніфест, маршрут і версію навчальної програми.</p></article>
+<article><span class="step-number">02</span><h3>Прогрес за курсом</h3><p>Зберігати пройдені картки, спроби й повторення окремо. Герой, ферма та колекція друзів залишаються спільними.</p></article>
+<article><span class="step-number">03</span><h3>Пакети карток</h3><p>Навчальні навички, передумови й стабільні ідентифікатори додати до каталогу. Збирач має приймати нові набори без фіксованої кількості вправ.</p></article>
+<article><span class="step-number">04</span><h3>Перевірений пілот</h3><p>Звірити зміст із програмою, підготувати власний звук та ілюстрації, експортувати картки й перевірити збереження прогресу на Android.</p></article>
+</div>
+<details class="technical"><summary>Технічний план для розробки</summary><div class="technical-body">
+<p>Рекомендована структура: реєстр <code>courses</code>, окремі <code>manifest</code>, <code>route</code> та <code>curriculum</code> для кожного курсу. Прогрес — у <code>progressByCourse[courseId]</code>; активна пригода також зберігає свій <code>courseId</code>.</p>
+<div class="table-wrap"><table><thead><tr><th>Зараз у Mihko</th><th>Одноразова зміна</th></tr></thead><tbody>
+<tr><td><code>neuro_start.gd</code>: доступний лише «Рік до школи»</td><td>Передавати <code>courseId</code> і відкривати лише готові курси</td></tr>
+<tr><td><code>game.gd</code>: один <code>data/course.json</code></td><td>Завантажувати пакет із реєстру курсів</td></tr>
+<tr><td><code>course_state.gd</code>: прогрес і міграції для фіксованих маршрутів</td><td>Мігрувати дошкільний прогрес без зміни старих ID; ізолювати маршрути класів</td></tr>
+<tr><td><code>build_course.py</code>, <code>card_compiler.py</code>: відомі набори й обмеження</td><td>Приймати новий маніфест, типи та метадані; перевіряти за версією схеми</td></tr>
+<tr><td><code>build_parent_catalog.py</code>: фіксовані 107 карток</td><td>Формувати звіт за курсом і навичкою</td></tr>
+</tbody></table></div>
+<p>У пілоті використано вибір відповіді, лічбу та порядок. Вебперегляд показує ці дії кнопками; остаточний експорт має зберігати формат чинного рушія. <code>pilot.json</code> — формат авторського каталогу, його не можна просто замінити на <code>game3d/data/course.json</code>.</p>
+<p>Нові ID мають вигляд <code>G1-MATH-01</code>. Передумови — посилання на картки плюс знання, зазначені в поясненні. Коди <code>skillId</code> тут внутрішні; це не офіційні коди МОН.</p>
+<p>Для довільного письма, диктанту, усного мовлення й перевірки відкритої відповіді потрібні додаткові механіки. Готовність нового класу перевіряється перед відкриттям його кнопки в меню.</p>
+</div></details>
+<div class="next-step"><div><p class="eyebrow">Наступний крок</p><h3>Звірити пілот з учителем і зробити адаптер курсів.</h3><p>Після цього додавання 2–4 класів зводиться переважно до створення й перевірки навчальних пакетів на вже підтримуваних механіках.</p></div><span class="next-arrow" aria-hidden="true">↗</span></div>
+</section>
+
+<section id="sources" class="section">
+<div class="section-heading"><div><p class="eyebrow">04 / перевірена основа</p><h2>Програми й підручники<br>є онлайн.</h2></div><p>Базою обираємо офіційну програму, а одну лінійку підручників використовуємо для послідовності тем. Картки пишемо власні.</p></div>
+<div class="source-callout"><h3>Яку програму беремо?</h3><p>Для цього пілоту — Савченко, 2022, цикл 1–2 класів. Програми Шияна також доступні на сайті МОН. Нову програму, затверджену в березні 2026 року, плануємо окремою версією: вона починає діяти для першокласників з вересня 2028 року.</p></div>
+<div id="source-list" class="source-list"></div>
+<p class="muted">Безкоштовний доступ до PDF не означає дозвіл переносити сторінки, ілюстрації чи аудіо у Mihko. Для пілоту створено власні тексти; для зображень і звуку потрібно підготувати власні матеріали або погодити використання.</p>
+</section>
+<footer><a class="brand" href="./">mihko / НУШ</a><span>Оновлено 9 жовтня 2026 · Авторський пілот 0.1</span><a href="https://github.com/neurolutionary/mihko-nush/tree/main/nush">Файли проєкту ↗</a></footer>
+<noscript><p class="load-error">Для інтерактивних карток увімкни JavaScript. <a href="pilot.json">Завантажити весь пілот</a>.</p></noscript>
+<p id="load-error" class="load-error" role="alert" hidden></p>
+</main>
+<dialog id="card-dialog" aria-labelledby="dialog-title">
+<div class="dialog-head"><span id="dialog-subject" class="eyebrow"></span><button id="close-dialog" class="close" type="button" aria-label="Закрити картку">✕</button></div>
+<p id="dialog-id" class="card-id"></p><h2 id="dialog-title"></h2><p id="dialog-goal" class="dialog-goal"></p>
+<div class="teach"><strong>Спочатку дізнайся</strong><p id="dialog-teach"></p></div>
+<h3 id="dialog-prompt" class="prompt"></h3><p id="order-note" class="muted" hidden>Натискай по черзі. Після останнього вибору перевіримо порядок.</p>
+<div id="answer-options" class="answer-options"></div><p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+<div class="exercise-actions"><button id="hint-button" class="button secondary" type="button">Підказка</button><button id="try-again" class="text-button" type="button" hidden>Спробувати ще раз</button></div><p id="hint" class="hint" hidden></p>
+<details class="method"><summary>Для дорослого: мета й передумови</summary><div><p><strong>Простіший варіант:</strong> <span id="dialog-easier"></span></p><p><strong>Потрібно раніше:</strong> <span id="dialog-prerequisites"></span></p><p><strong>Навичка:</strong> <code id="dialog-skill"></code></p><p><strong>Програма:</strong> <a id="dialog-source"></a>. Тематична прив’язка; офіційні коди результатів ще не звірено.</p><p>Авторська чернетка. Ілюстрації, озвучення та експорт для Android ще не підготовлені.</p></div></details>
+</dialog>
+</body></html>

@@ -1,0 +1,1197 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.1.0",
+  "updatedAt": "2026-10-09",
+  "title": "Mihko · НУШ",
+  "authoringNote": "24 оригінальні текстові картки для методичного огляду. Це не повний курс і не готовий game3d/data/course.json.",
+  "curriculumBase": "savchenko-2022",
+  "subjects": [
+    {
+      "id": "math",
+      "name": "Математика",
+      "short": "Математика",
+      "color": "orange",
+      "symbol": "123"
+    },
+    {
+      "id": "ukrainian",
+      "name": "Українська мова й читання",
+      "short": "Українська",
+      "color": "purple",
+      "symbol": "Аа"
+    },
+    {
+      "id": "english",
+      "name": "Англійська мова",
+      "short": "Англійська",
+      "color": "blue",
+      "symbol": "Hi"
+    },
+    {
+      "id": "world",
+      "name": "Я досліджую світ",
+      "short": "ЯДС",
+      "color": "green",
+      "symbol": "☘"
+    }
+  ],
+  "courses": [
+    {
+      "id": "preschool",
+      "label": "Рік до школи",
+      "status": "Чинний курс гри",
+      "description": "Окремий дошкільний маршрут. Шкільні курси мають власні цілі й прогрес.",
+      "topics": [
+        "Лічба, порівняння та прості закономірності",
+        "Звуки, мовлення й підготовка до читання",
+        "Пізнання світу, взаємодія та самостійність"
+      ],
+      "next": "Зберегти поточні ідентифікатори карток і пройдені завдання."
+    },
+    {
+      "id": "grade1",
+      "label": "1 клас",
+      "status": "24 картки пілоту",
+      "description": "Пробуємо чотири напрями на тих механіках, які вже є в Mihko.",
+      "topics": [
+        "Математика: числа до 100; у пілоті — лічба й дії в межах 5",
+        "Українська: звук, буква, склад, слово, просте речення",
+        "Англійська: знайомі предмети, кольори, числа й короткі звернення",
+        "ЯДС: живе й неживе, рослини, тварини та співпраця"
+      ],
+      "next": "Методична перевірка → власні ілюстрації та озвучення → експорт у гру."
+    },
+    {
+      "id": "grade2",
+      "label": "2 клас",
+      "status": "Карта тем",
+      "description": "Наступний пакет після перевірки 1 класу; картки ще не написані.",
+      "topics": [
+        "Математика: дії в межах 100, множення й ділення, величини",
+        "Українська: читання з розумінням, речення, будова слова та правопис",
+        "Англійська: сім’я, школа, щоденні дії та прості запитання",
+        "ЯДС: природні зміни, громада, здорові звички й цифрова грамотність"
+      ],
+      "next": "Обрати послідовність тем за програмою та однією лінійкою підручників."
+    },
+    {
+      "id": "grade3",
+      "label": "3 клас",
+      "status": "Карта тем",
+      "description": "Нові навчальні пакети на спільному рушії вправ.",
+      "topics": [
+        "Математика: числа до 1000, обчислення, ділення з остачею, частини цілого",
+        "Українська: текст, частини мови, правопис і пояснення прочитаного",
+        "Англійська: опис людей і місць, короткі повідомлення та діалоги",
+        "ЯДС: дослідження природи, Україна, суспільство й робота з інформацією"
+      ],
+      "next": "Додати адаптивні повторення за навичками, а не лише за позицією маршруту."
+    },
+    {
+      "id": "grade4",
+      "label": "4 клас",
+      "status": "Карта тем",
+      "description": "Завершення початкової школи потребує також відкритих і практичних завдань.",
+      "topics": [
+        "Математика: багатоцифрові числа, дроби, площа, рух і багатокрокові задачі",
+        "Українська: розуміння тексту, мовні поняття та власні висловлювання",
+        "Англійська: коротке читання, повідомлення й діалоги на знайомі теми",
+        "ЯДС: взаємозв’язки в природі й суспільстві, дослідницькі проєкти"
+      ],
+      "next": "Для власного письма, усного мовлення й оцінювання додати окремі механіки."
+    }
+  ],
+  "sources": [
+    {
+      "id": "mon-list",
+      "title": "МОН: навчальні програми для 1–4 класів",
+      "url": "https://mon.gov.ua/osvita-2/zagalna-serednya-osvita/osvitni-programi/navchalni-programi-dlya-1-4-klasiv",
+      "note": "Програми Савченко та Шияна для циклів 1–2 і 3–4 класів. Для пілоту обираємо базу Савченко (2022)."
+    },
+    {
+      "id": "savchenko-12",
+      "title": "Савченко: типова освітня програма 1–2 класів, 2022",
+      "url": "https://mon.gov.ua/static-objects/mon/sites/1/zagalna%20serednya/programy-1-4-klas/2022/08/15/Typova.osvitnya.prohrama.1-4/Typova.osvitnya.prohrama.1-2.Savchenko.pdf",
+      "note": "Безкоштовний PDF МОН. Пілот має тематичну прив’язку; точні коди результатів навчання ще треба звірити."
+    },
+    {
+      "id": "savchenko-34",
+      "title": "Савченко: типова освітня програма 3–4 класів, 2022",
+      "url": "https://mon.gov.ua/static-objects/mon/sites/1/zagalna%20serednya/programy-1-4-klas/2022/08/15/Typova.osvitnya.prohrama.1-4/Typova.osvitnya.prohrama.3-4.Savchenko.pdf",
+      "note": "Офіційна база для майбутніх пакетів 3 і 4 класів."
+    },
+    {
+      "id": "mon-2028",
+      "title": "МОН: нова програма, затверджена 18 березня 2026",
+      "url": "https://mon.gov.ua/news/zatverdzheno-typovu-osvitniu-prohramu-dlia-14-klasiv",
+      "note": "Почне застосовуватися для першокласників з 1 вересня 2028 року. Її слід додавати окремою версією курсу."
+    },
+    {
+      "id": "imzo",
+      "title": "ІМЗО: електронна бібліотека підручників",
+      "url": "https://lib.imzo.gov.ua/",
+      "note": "Безкоштовні електронні версії. Обирати клас, предмет, авторів і рік видання."
+    },
+    {
+      "id": "math-book",
+      "title": "Математика, 4 клас: Скворцова / Онопрієнко, частина 2",
+      "url": "https://lib.imzo.gov.ua/wa-data/public/site/books2/pidruchnyky-4-klas-2021/14-Matematyka-4kl/Matematyka-4kl-Skvortsova-Onopriyenko/Matymatyka-4kl-%D0%A1h2-Skvortsova.pdf",
+      "note": "Приклад доступного PDF. Авторська лінійка може бути орієнтиром для послідовності тем."
+    },
+    {
+      "id": "ua-book",
+      "title": "Українська мова, 3 клас: Пономарьова / Гайова, частина 1",
+      "url": "https://lib.imzo.gov.ua/wa-data/public/site/books2/pidruchnyky-3-klas-2020/1-Ukr-mova-3kl/Ukr-mova-Ponomaryova/Ukr-mova-3kl-Ponomaryova-ch1.pdf",
+      "note": "Приклад безкоштовного підручника з бібліотеки ІМЗО."
+    },
+    {
+      "id": "en-book",
+      "title": "Англійська мова, 4 клас: Карпюк",
+      "url": "https://lib.imzo.gov.ua/wa-data/public/site/books2/pidruchnyky-4-klas-2021/10-English-4kl/English-4kl-Karpyuk/Karpyuk-English-4kl.pdf",
+      "note": "Підручник загальної початкової школи. Звук для Mihko записуємо окремо."
+    },
+    {
+      "id": "world-method",
+      "title": "Світ довкола: методичні матеріали до ЯДС, 2 клас",
+      "url": "https://svitdovkola.org/metodic/yds2",
+      "note": "Приклад календарних планів і допоміжних матеріалів видавця. Не замінює типову програму."
+    }
+  ],
+  "cards": [
+    {
+      "id": "G1-MATH-01",
+      "courseId": "grade1",
+      "subjectId": "math",
+      "title": "Скільки насінин?",
+      "goal": "Полічити предмети в межах 5.",
+      "teach": "Лічимо кожну насінину один раз: одна, дві, три, чотири.",
+      "prompt": "Нейро приготував насінини: ● ● ● ●. Скільки їх?",
+      "interaction": {
+        "type": "choose_count",
+        "options": [
+          {
+            "id": "1",
+            "label": "3"
+          },
+          {
+            "id": "2",
+            "label": "4"
+          },
+          {
+            "id": "3",
+            "label": "5"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Торкнися кожного кружечка й назви наступне число.",
+      "easier": "Почати з двох насінин.",
+      "prerequisites": [],
+      "skillId": "math.count.to5",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Полічити предмети в межах 5."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-MATH-02",
+      "courseId": "grade1",
+      "subjectId": "math",
+      "title": "Доріжка чисел",
+      "goal": "Упорядкувати числа 1–3.",
+      "teach": "Після 1 іде 2, а після 2 — 3.",
+      "prompt": "Натисни числа від найменшого до найбільшого.",
+      "interaction": {
+        "type": "order",
+        "options": [
+          {
+            "id": "1",
+            "label": "3"
+          },
+          {
+            "id": "2",
+            "label": "1"
+          },
+          {
+            "id": "3",
+            "label": "2"
+          }
+        ],
+        "answerIds": [
+          "2",
+          "3",
+          "1"
+        ]
+      },
+      "hint": "Почни з одиниці.",
+      "easier": "Упорядкувати тільки 1 і 2.",
+      "prerequisites": [
+        "G1-MATH-01"
+      ],
+      "skillId": "math.order.to3",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упорядкувати числа 1–3."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-MATH-03",
+      "courseId": "grade1",
+      "subjectId": "math",
+      "title": "Де більше?",
+      "goal": "Порівняти дві кількості.",
+      "teach": "Можна утворити пари. У більшій групі залишаться зайві предмети.",
+      "prompt": "На першій грядці 3 морквини, на другій — 5. Де морквин більше?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "На першій"
+          },
+          {
+            "id": "2",
+            "label": "На другій"
+          },
+          {
+            "id": "3",
+            "label": "Порівну"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Порівняй 3 і 5 на доріжці чисел.",
+      "easier": "Порівняти 1 і 2 за допомогою предметів.",
+      "prerequisites": [
+        "G1-MATH-01"
+      ],
+      "skillId": "math.compare.to5",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Порівняти дві кількості."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-MATH-04",
+      "courseId": "grade1",
+      "subjectId": "math",
+      "title": "Насінини разом",
+      "goal": "Додати числа в межах 5.",
+      "teach": "Коли додаємо, об’єднуємо дві групи.",
+      "prompt": "Нейро мав 3 насінини й отримав ще 2. Скільки насінин тепер?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "4"
+          },
+          {
+            "id": "2",
+            "label": "5"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "До трьох долічи ще дві.",
+      "easier": "Об’єднати 1 і 1 предмет.",
+      "prerequisites": [
+        "G1-MATH-01"
+      ],
+      "skillId": "math.add.to5",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Додати числа в межах 5."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-MATH-05",
+      "courseId": "grade1",
+      "subjectId": "math",
+      "title": "Посадили дві",
+      "goal": "Відняти в межах 5.",
+      "teach": "Відняти — забрати частину й полічити те, що залишилося.",
+      "prompt": "Було 5 насінин. 2 посадили. Скільки залишилося?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "2"
+          },
+          {
+            "id": "2",
+            "label": "4"
+          },
+          {
+            "id": "3",
+            "label": "3"
+          }
+        ],
+        "answerIds": [
+          "3"
+        ]
+      },
+      "hint": "Відклади два з п’яти кружечків.",
+      "easier": "Почати з 3 насінин і посадити 1.",
+      "prerequisites": [
+        "G1-MATH-01"
+      ],
+      "skillId": "math.subtract.to5",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Відняти в межах 5."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-MATH-06",
+      "courseId": "grade1",
+      "subjectId": "math",
+      "title": "Доповни до п’яти",
+      "goal": "Знайти невідомий доданок.",
+      "teach": "Дізнаємося, скількох предметів бракує до потрібної кількості.",
+      "prompt": "На грядці 2 паростки. Скільки ще треба, щоб було 5?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "3"
+          },
+          {
+            "id": "2",
+            "label": "2"
+          },
+          {
+            "id": "3",
+            "label": "4"
+          }
+        ],
+        "answerIds": [
+          "1"
+        ]
+      },
+      "hint": "Долічи від двох до п’яти: три, чотири, п’ять.",
+      "easier": "Доповнити 2 до 3.",
+      "prerequisites": [
+        "G1-MATH-04"
+      ],
+      "skillId": "math.compose.5",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Знайти невідомий доданок."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-UKR-01",
+      "courseId": "grade1",
+      "subjectId": "ukrainian",
+      "title": "Перший звук",
+      "goal": "Виділити початковий звук [м].",
+      "teach": "Дорослий вимовляє «м-м-миша». На початку чуємо [м].",
+      "prompt": "Яке слово починається звуком [м]?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Кіт"
+          },
+          {
+            "id": "2",
+            "label": "Мак"
+          },
+          {
+            "id": "3",
+            "label": "Сік"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Повільно промов кожне слово.",
+      "easier": "Залишити лише «мак» і «кіт».",
+      "prerequisites": [],
+      "skillId": "ukrainian.initial.m",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Виділити початковий звук [м]."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-UKR-02",
+      "courseId": "grade1",
+      "subjectId": "ukrainian",
+      "title": "Знайди букву М",
+      "goal": "Упізнати велику друковану букву М.",
+      "teach": "Звук [м] на письмі може позначати буква М.",
+      "prompt": "Обери букву М.",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "А"
+          },
+          {
+            "id": "2",
+            "label": "С"
+          },
+          {
+            "id": "3",
+            "label": "М"
+          }
+        ],
+        "answerIds": [
+          "3"
+        ]
+      },
+      "hint": "Порівняй зі зразком у завданні.",
+      "easier": "Показати лише М і А.",
+      "prerequisites": [
+        "G1-UKR-01"
+      ],
+      "skillId": "ukrainian.letter.m",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упізнати велику друковану букву М."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-UKR-03",
+      "courseId": "grade1",
+      "subjectId": "ukrainian",
+      "title": "Склад МА",
+      "goal": "З’єднати М і А в склад.",
+      "teach": "М позначає [м], А — [а]. Разом читаємо «ма».",
+      "prompt": "Який склад утворюють М та А?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "АМ"
+          },
+          {
+            "id": "2",
+            "label": "МА"
+          },
+          {
+            "id": "3",
+            "label": "МО"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Почни читати зі звука [м].",
+      "easier": "Дорослий читає варіанти, дитина повторює.",
+      "prerequisites": [
+        "G1-UKR-02"
+      ],
+      "skillId": "ukrainian.syllable.ma",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "З’єднати М і А в склад."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-UKR-04",
+      "courseId": "grade1",
+      "subjectId": "ukrainian",
+      "title": "Два склади",
+      "goal": "Поділити знайоме слово на склади.",
+      "teach": "Промовляємо «ма-ма»: чуємо два склади.",
+      "prompt": "Скільки складів у слові «мама»?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "1"
+          },
+          {
+            "id": "2",
+            "label": "3"
+          },
+          {
+            "id": "3",
+            "label": "2"
+          }
+        ],
+        "answerIds": [
+          "3"
+        ]
+      },
+      "hint": "Плесни один раз на кожен склад.",
+      "easier": "Спочатку повторити «ма», потім «ма-ма».",
+      "prerequisites": [
+        "G1-UKR-03"
+      ],
+      "skillId": "ukrainian.syllables.two",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Поділити знайоме слово на склади."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-UKR-05",
+      "courseId": "grade1",
+      "subjectId": "ukrainian",
+      "title": "Прочитай слово",
+      "goal": "Прочитати коротке слово з уже вивчених букв.",
+      "teach": "Потрібно вже знати К, І, Т. К-і-т → кіт.",
+      "prompt": "Яке слово називає кота?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "КІТ"
+          },
+          {
+            "id": "2",
+            "label": "ТІК"
+          },
+          {
+            "id": "3",
+            "label": "МАК"
+          }
+        ],
+        "answerIds": [
+          "1"
+        ]
+      },
+      "hint": "Прочитай зліва направо й з’єднай звуки.",
+      "easier": "Дорослий по черзі озвучує слова; перед вправою вивчити К, І, Т.",
+      "prerequisites": [],
+      "skillId": "ukrainian.read.kit",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Прочитати коротке слово з уже вивчених букв."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-UKR-06",
+      "courseId": "grade1",
+      "subjectId": "ukrainian",
+      "title": "Склади речення",
+      "goal": "Упорядкувати два слова в простому реченні.",
+      "teach": "Речення повідомляє завершену думку. Перше слово пишемо з великої букви.",
+      "prompt": "Натисни слова, щоб вийшло «Кіт спить».",
+      "interaction": {
+        "type": "order",
+        "options": [
+          {
+            "id": "1",
+            "label": "спить"
+          },
+          {
+            "id": "2",
+            "label": "Кіт"
+          }
+        ],
+        "answerIds": [
+          "2",
+          "1"
+        ]
+      },
+      "hint": "Спочатку назви того, про кого йдеться.",
+      "easier": "Дорослий читає обидва слова.",
+      "prerequisites": [
+        "G1-UKR-05"
+      ],
+      "skillId": "ukrainian.sentence.two",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упорядкувати два слова в простому реченні."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-ENG-01",
+      "courseId": "grade1",
+      "subjectId": "english",
+      "title": "Hello, Нейро!",
+      "goal": "Упізнати привітання hello.",
+      "teach": "Hello означає «привіт». Дорослий читає слово вголос.",
+      "prompt": "Яке слово використаємо, щоб привітатися?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Bye"
+          },
+          {
+            "id": "2",
+            "label": "Hello"
+          },
+          {
+            "id": "3",
+            "label": "Cat"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Згадай привітання з пояснення.",
+      "easier": "Повторити hello за дорослим.",
+      "prerequisites": [],
+      "skillId": "english.greeting.hello",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упізнати привітання hello."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-ENG-02",
+      "courseId": "grade1",
+      "subjectId": "english",
+      "title": "Cat чи dog?",
+      "goal": "Упізнати слово cat.",
+      "teach": "Cat — кіт. Dog — собака. Дорослий озвучує обидва слова.",
+      "prompt": "Як англійською назвати кота?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Dog"
+          },
+          {
+            "id": "2",
+            "label": "Red"
+          },
+          {
+            "id": "3",
+            "label": "Cat"
+          }
+        ],
+        "answerIds": [
+          "3"
+        ]
+      },
+      "hint": "На початку cat чуємо [k].",
+      "easier": "Обрати з двох слів: cat і dog.",
+      "prerequisites": [],
+      "skillId": "english.word.cat",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упізнати слово cat."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-ENG-03",
+      "courseId": "grade1",
+      "subjectId": "english",
+      "title": "Синій колір",
+      "goal": "Упізнати слово blue.",
+      "teach": "Blue — синій. Red — червоний. Green — зелений.",
+      "prompt": "Яке слово означає «синій»?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Blue"
+          },
+          {
+            "id": "2",
+            "label": "Green"
+          },
+          {
+            "id": "3",
+            "label": "Red"
+          }
+        ],
+        "answerIds": [
+          "1"
+        ]
+      },
+      "hint": "Повтори: blue — синій.",
+      "easier": "Залишити blue і red та додати власні кольорові зразки.",
+      "prerequisites": [],
+      "skillId": "english.color.blue",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упізнати слово blue."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-ENG-04",
+      "courseId": "grade1",
+      "subjectId": "english",
+      "title": "Дві ягідки",
+      "goal": "Упізнати число two.",
+      "teach": "One — один, two — два, three — три. Дорослий читає слова.",
+      "prompt": "Як англійською сказати «два»?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "One"
+          },
+          {
+            "id": "2",
+            "label": "Two"
+          },
+          {
+            "id": "3",
+            "label": "Three"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Полічи два кружечки: ● ●.",
+      "easier": "Повторити one, two з двома предметами.",
+      "prerequisites": [],
+      "skillId": "english.number.two",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упізнати число two."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-ENG-05",
+      "courseId": "grade1",
+      "subjectId": "english",
+      "title": "Blue ball",
+      "goal": "Зрозуміти словосполучення з кольором.",
+      "teach": "Ball — м’яч; blue — синій. Blue ball — синій м’яч.",
+      "prompt": "Що означає «blue ball»?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Червоний м’яч"
+          },
+          {
+            "id": "2",
+            "label": "Синій м’яч"
+          },
+          {
+            "id": "3",
+            "label": "Синій кіт"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Переклади два слова по черзі.",
+      "easier": "Спершу окремо повторити blue і ball.",
+      "prerequisites": [
+        "G1-ENG-03"
+      ],
+      "skillId": "english.phrase.blue_ball",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Зрозуміти словосполучення з кольором."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-ENG-06",
+      "courseId": "grade1",
+      "subjectId": "english",
+      "title": "Bye, Нейро!",
+      "goal": "Упізнати слово прощання bye.",
+      "teach": "Bye означає «бувай». Hello — «привіт».",
+      "prompt": "Яке слово скажемо на прощання?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Hello"
+          },
+          {
+            "id": "2",
+            "label": "Two"
+          },
+          {
+            "id": "3",
+            "label": "Bye"
+          }
+        ],
+        "answerIds": [
+          "3"
+        ]
+      },
+      "hint": "Згадай коротке слово з пояснення.",
+      "easier": "Повторити bye, махнувши рукою.",
+      "prerequisites": [
+        "G1-ENG-01"
+      ],
+      "skillId": "english.farewell.bye",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упізнати слово прощання bye."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-YDS-01",
+      "courseId": "grade1",
+      "subjectId": "world",
+      "title": "Живе поруч",
+      "goal": "Розрізнити живий організм і неживі предмети.",
+      "teach": "Рослини й тварини належать до живої природи. Вони ростуть і потребують умов для життя.",
+      "prompt": "Що належить до живої природи?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Камінь"
+          },
+          {
+            "id": "2",
+            "label": "Дерево"
+          },
+          {
+            "id": "3",
+            "label": "Лавка"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Подумай, що росте.",
+      "easier": "Порівняти лише дерево і камінь.",
+      "prerequisites": [],
+      "skillId": "world.living.plant",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Розрізнити живий організм і неживі предмети."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-YDS-02",
+      "courseId": "grade1",
+      "subjectId": "world",
+      "title": "Що потрібно рослині?",
+      "goal": "Назвати одну умову росту рослини.",
+      "teach": "Для росту рослині потрібні, зокрема, вода, світло й повітря.",
+      "prompt": "Що з цього потрібне рослині для росту?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Фарба"
+          },
+          {
+            "id": "2",
+            "label": "Іграшка"
+          },
+          {
+            "id": "3",
+            "label": "Вода"
+          }
+        ],
+        "answerIds": [
+          "3"
+        ]
+      },
+      "hint": "Згадай, чим поливають рослини.",
+      "easier": "Разом із дорослим оглянути кімнатну рослину.",
+      "prerequisites": [
+        "G1-YDS-01"
+      ],
+      "skillId": "world.plant.water",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Назвати одну умову росту рослини."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-YDS-03",
+      "courseId": "grade1",
+      "subjectId": "world",
+      "title": "Від насінини до рослини",
+      "goal": "Упорядкувати прості етапи росту.",
+      "teach": "Спочатку висіваємо насінину, потім з’являється паросток, згодом виростає більша рослина.",
+      "prompt": "Натисни етапи росту по порядку.",
+      "interaction": {
+        "type": "order",
+        "options": [
+          {
+            "id": "1",
+            "label": "Рослина"
+          },
+          {
+            "id": "2",
+            "label": "Насінина"
+          },
+          {
+            "id": "3",
+            "label": "Паросток"
+          }
+        ],
+        "answerIds": [
+          "2",
+          "3",
+          "1"
+        ]
+      },
+      "hint": "Почни з насінини.",
+      "easier": "Упорядкувати лише насінину й паросток.",
+      "prerequisites": [
+        "G1-YDS-02"
+      ],
+      "skillId": "world.plant.sequence",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Упорядкувати прості етапи росту."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-YDS-04",
+      "courseId": "grade1",
+      "subjectId": "world",
+      "title": "Дбаймо про кота",
+      "goal": "Обрати турботливу дію щодо тварини.",
+      "teach": "Домашній кіт потребує свіжої води, відповідного корму й спокійного місця.",
+      "prompt": "Як подбати про домашнього кота?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Тягнути за хвіст"
+          },
+          {
+            "id": "2",
+            "label": "Залишити без води"
+          },
+          {
+            "id": "3",
+            "label": "Разом із дорослим налити свіжої води"
+          }
+        ],
+        "answerIds": [
+          "3"
+        ]
+      },
+      "hint": "Обери дію, яка допомагає тварині.",
+      "easier": "Обговорити одну добру дію без вибору варіантів.",
+      "prerequisites": [],
+      "skillId": "world.animal.care",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Обрати турботливу дію щодо тварини."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-YDS-05",
+      "courseId": "grade1",
+      "subjectId": "world",
+      "title": "Чиста галявина",
+      "goal": "Обрати дію для збереження чистоти.",
+      "teach": "Пакування після перекусу забираємо із собою й викидаємо у відповідний контейнер.",
+      "prompt": "Що зробити з власною порожньою обгорткою після перекусу?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Забрати до відповідного контейнера"
+          },
+          {
+            "id": "2",
+            "label": "Кинути в траву"
+          },
+          {
+            "id": "3",
+            "label": "Залишити під деревом"
+          }
+        ],
+        "answerIds": [
+          "1"
+        ]
+      },
+      "hint": "Подумай, що збереже галявину чистою.",
+      "easier": "Знайти поруч контейнер разом із дорослим.",
+      "prerequisites": [],
+      "skillId": "world.environment.waste",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Обрати дію для збереження чистоти."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    },
+    {
+      "id": "G1-YDS-06",
+      "courseId": "grade1",
+      "subjectId": "world",
+      "title": "Працюємо разом",
+      "goal": "Обрати дію для співпраці.",
+      "teach": "Спільна справа виходить краще, коли слухаємо одне одного й домовляємося.",
+      "prompt": "Друг теж хоче посадити насінину. Що запропонувати?",
+      "interaction": {
+        "type": "choose_one",
+        "options": [
+          {
+            "id": "1",
+            "label": "Забрати всі насінини"
+          },
+          {
+            "id": "2",
+            "label": "Домовитися й садити по черзі"
+          },
+          {
+            "id": "3",
+            "label": "Не слухати друга"
+          }
+        ],
+        "answerIds": [
+          "2"
+        ]
+      },
+      "hint": "Як дати можливість попрацювати обом?",
+      "easier": "Розіграти ситуацію з дорослим.",
+      "prerequisites": [],
+      "skillId": "world.cooperation.turns",
+      "estimatedSeconds": 90,
+      "curriculum": {
+        "sourceId": "savchenko-12",
+        "mappingStatus": "topic_draft",
+        "topic": "Обрати дію для співпраці."
+      },
+      "status": "author_draft",
+      "assetsStatus": "text_demo",
+      "gameExportStatus": "not_exported"
+    }
+  ]
+}
