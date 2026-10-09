@@ -1,4 +1,4 @@
-name: Mihko NUSH Pages
+name: Mihko NUSH checks
 on:
   push:
     branches: [main]
@@ -29,22 +29,3 @@ jobs:
           name: mihko-nush-preview
           path: dist/nush-pages/
           include-hidden-files: true
-      - uses: actions/upload-pages-artifact@v4
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        with:
-          path: dist/nush-pages/
-  deploy:
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    needs: build
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/configure-pages@v5
-      - uses: actions/deploy-pages@v4
-        id: deployment
